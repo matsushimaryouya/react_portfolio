@@ -1,6 +1,5 @@
 {
   "name": "a",
-  "homepage": "./",
   "author": "DeviasIO",
   "licence": "MIT",
   "version": "1.0.0",
@@ -13,6 +12,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": " https://matsushimaryouya.github.io/react_portfolio/",
   "eslintConfig": {
     "extends": "react-app"
   },
