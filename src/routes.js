@@ -29,6 +29,15 @@ const routes = [
       { path: '/', element: <Navigate to="/app/top" /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
+  },
+  {
+    path: 'react_portfolio',
+    element: <MainLayout />,
+    children: [
+      { path: '404', element: <NotFound /> },
+      { path: '/', element: <Navigate to="/app/top" /> },
+      { path: '*', element: <Navigate to="/404" /> }
+    ]
   }
 ];
 
