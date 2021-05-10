@@ -26,7 +26,7 @@ const routes = [
     element: <MainLayout />,
     children: [
       { path: '404', element: <NotFound /> },
-      { path: '/', element: <Top /> },
+      { path: '/', element: <Navigate to="/app/top" /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
   }
