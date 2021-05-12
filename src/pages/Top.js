@@ -90,7 +90,7 @@ const Top = () => (
             xl={3}
             xs={12}
           >
-            <img src="/static/images/other/cat.jpg" width="100%" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/static/images/other/cat.jpg`} width="100%" alt="img" />
           </Grid>
           <Grid
             item
@@ -152,7 +152,7 @@ const Top = () => (
             xl={3}
             xs={12}
           >
-            <img src="/static/images/other/cat.jpg" width="100%" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/static/images/other/cat.jpg`} width="100%" alt="img" />
           </Grid>
           <Grid
             item
@@ -255,7 +255,7 @@ const Top = () => (
             xl={3}
             xs={12}
           >
-            <img src="/static/images/other/cat.jpg" width="100%" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/static/images/other/cat.jpg`} width="100%" alt="img" />
           </Grid>
           <Grid
             item

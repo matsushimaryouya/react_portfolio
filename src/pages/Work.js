@@ -57,7 +57,7 @@ const ProductList = () => (
                 <CardActionArea>
                   <CardMedia
                     style={{ height: 140 }}
-                    image="/static/images/other/hp4.png"
+                    image={`${process.env.PUBLIC_URL}/static/images/other/hp4.png`}
                     title="Contemplative Reptile"
                   />
                   <CardContent>
@@ -99,7 +99,7 @@ const ProductList = () => (
                 <CardActionArea>
                   <CardMedia
                     style={{ height: 140 }}
-                    image="/static/images/other/hp5.png"
+                    image={`${process.env.PUBLIC_URL}/static/images/other/hp5.png`}
                     title="Contemplative Reptile"
                   />
                   <CardContent>
@@ -141,7 +141,7 @@ const ProductList = () => (
                 <CardActionArea>
                   <CardMedia
                     style={{ height: 140 }}
-                    image="/static/images/other/hp1.png"
+                    image={`${process.env.PUBLIC_URL}/static/images/other/hp1.png`}
                     title="Contemplative Reptile"
                   />
                   <CardContent>
@@ -183,7 +183,7 @@ const ProductList = () => (
                 <CardActionArea>
                   <CardMedia
                     style={{ height: 140 }}
-                    image="/static/images/other/hp2.png"
+                    image={`${process.env.PUBLIC_URL}/static/images/other/hp2.png`}
                     title="Contemplative Reptile"
                   />
                   <CardContent>
@@ -225,7 +225,7 @@ const ProductList = () => (
                 <CardActionArea>
                   <CardMedia
                     style={{ height: 140 }}
-                    image="/static/images/other/cat.jpg"
+                    image={`${process.env.PUBLIC_URL}/static/images/other/cat.jpg`}
                     title="Contemplative Reptile"
                   />
                   <CardContent>
@@ -267,7 +267,7 @@ const ProductList = () => (
                 <CardActionArea>
                   <CardMedia
                     style={{ height: 140 }}
-                    image="/static/images/other/hp3.png"
+                    image={`${process.env.PUBLIC_URL}/static/images/other/hp3.png`}
                     title="Contemplative Reptile"
                   />
                   <CardContent>

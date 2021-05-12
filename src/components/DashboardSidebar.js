@@ -87,7 +87,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
                   marginLeft: 'auto',
                 }}
                 component={RouterLink}
-                src={user.avatar}
+                src={`${process.env.PUBLIC_URL}/static/images/other/avatar.png`}
                 sx={{
                   cursor: 'pointer',
                   width: 64,

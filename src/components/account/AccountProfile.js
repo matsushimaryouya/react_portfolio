@@ -14,7 +14,7 @@ import 'ui-neumorphism/dist/index.css';
 // -----------------------
 
 const user = {
-  avatar: '/static/images/avatars/avatar.png',
+  avatar: '/static/images/other/cat.jpg',
   city: 'Ryouya Matsushima',
   country: 'USA',
   jobTitle: 'Ryouya Matsushima',
@@ -34,7 +34,7 @@ const AccountProfile = (props) => (
         }}
       >
         <Avatar
-          src={user.avatar}
+          src={`${process.env.PUBLIC_URL}/static/images/other/avatar.png`}
           sx={{
             height: 100,
             width: 100
