@@ -77,7 +77,7 @@ body{
   }
   .EffectAnim{
     width: 100%!important;
-    height: auto!important;
+    height: 100%!important;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -96,7 +96,7 @@ body{
     object-fit: cover;
   }
   .Clouds{
-    top: -520px;
+    top: -470px;
   }
   .Rain.EffectAnim{
     height: calc(100vh - 24px)!important;
