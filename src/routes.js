@@ -10,7 +10,7 @@ import Top from 'src/pages/Top';
 
 const routes = [
   {
-    path: 'app',
+    path: 'react_portfolio',
     element: <DashboardLayout />,
     children: [
       { path: 'profile', element: <Account /> },
@@ -25,8 +25,8 @@ const routes = [
     path: '/',
     element: <MainLayout />,
     children: [
-      { path: '404', element: <Navigate to="/app/top" /> },
-      { path: '/', element: <Navigate to="/app/top" /> },
+      { path: '404', element: <Navigate to="/react_portfolio/top" /> },
+      { path: '/', element: <Navigate to="/react_portfolio/top" /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
   }
