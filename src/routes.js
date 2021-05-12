@@ -15,6 +15,7 @@ const routes = [
     children: [
       { path: 'profile', element: <Account /> },
       { path: 'customers', element: <CustomerList /> },
+      { path: '/', element: <Top /> },
       { path: 'top', element: <Top /> },
       { path: 'work', element: <Work /> },
       { path: 'settings', element: <Settings /> },
