@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core';
 // ニューモフィズム----------
 import {
-  Button, Card, CardContent, Body2
+  Button, Card, CardContent
 } from 'ui-neumorphism';
 import 'ui-neumorphism/dist/index.css';
 // -----------------------
@@ -25,15 +25,15 @@ const user = {
 
 const items = [
   {
-    href: '/app/top',
+    href: '/react_portfolio/top',
     title: 'Top'
   },
   {
-    href: '/app/profile',
+    href: '/react_portfolio/profile',
     title: 'Profile'
   },
   {
-    href: '/app/work',
+    href: '/react_portfolio/work',
     title: 'Work'
   }
 ];
@@ -68,7 +68,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
           }}
         >
           <CardContent style={{ background: 'unset' }}>
-            <Body2
+            <div
               style={{
                 paddingTop: 10,
                 paddingBottom: 10
@@ -93,14 +93,13 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
                   width: 64,
                   height: 64
                 }}
-                to="/app/profile"
+                to="/react_portfolio/profile"
               />
               <Typography
                 style={{
                   padding: '5px'
                 }}
                 color="textSecondary"
-                variant="body2"
               >
                 {user.jobTitle}
               </Typography>
@@ -110,7 +109,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
               >
                 {user.name}
               </Typography>
-            </Body2>
+            </div>
           </CardContent>
         </Card>
         <Box sx={{ p: 2 }}>

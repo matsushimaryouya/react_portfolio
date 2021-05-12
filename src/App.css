@@ -201,11 +201,14 @@ body{
   .css-1fryyk0{
     padding-bottom: 0;
   }
-  .css-tne6ne-MuiButtonBase-root-MuiButton-root{
+  /* .css-tne6ne-MuiButtonBase-root-MuiButton-root{
     color: #00f2fe;
     background: -webkit-linear-gradient(0deg, #2575fc, #00f2fe, #15ff00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  } */
+  .css-tne6ne-MuiButtonBase-root-MuiButton-root{
+    color: #07ccd6!important;
   }
   .weatherNav h1{
     margin-top: 10px;

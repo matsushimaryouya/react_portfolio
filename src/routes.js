@@ -16,7 +16,6 @@ const routes = [
       { path: 'profile', element: <Account /> },
       { path: 'customers', element: <CustomerList /> },
       { path: 'top', element: <Top /> },
-      { path: '/', element: <Top /> },
       { path: 'work', element: <Work /> },
       { path: 'settings', element: <Settings /> },
       { path: '*', element: <Navigate to="/404" /> }
