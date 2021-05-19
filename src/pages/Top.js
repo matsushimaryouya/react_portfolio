@@ -161,36 +161,42 @@ const Top = () => (
             xl={12}
             xs={12}
           >
-            <Card className="sectionTop">
-              <Box sx={{ textAlign: 'center' }}>
-                <Typography variant="h1" component="h2" gutterBottom>
-                  <br />
-                  商品紹介Webアプリケーション
-                  <br />
-                  <br />
-                  React × Unity
-                </Typography>
-                <img src="/static/images/other/carColorChange.png" width="100%" alt="img" />
-                <Typography style={{ textAlign: 'left' }} variant="body1" gutterBottom>
-                  <br />
-                  3Dデータを利用することで実物に近いビジュアルで商品を紹介出来る
-                  Webアプリケーションです。右下のボタンを押すことで車の色の変更が可能です。
-                  また、画面上をクリックしながらドラッグすることで車を360度見ることができます。
-                  <br />
-                  <br />
-                </Typography>
-                <Typography style={{ textAlign: 'left' }} variant="h2" gutterBottom>
-                  Unity
-                </Typography>
-                <Typography style={{ textAlign: 'left' }} variant="body1" gutterBottom>
-                  3Dの部分はUnityを使用してリアルタイムレンダリングやモデルを回転させる
-                  動作を行っております。UI部分はReactを使用しており、Reactの豊富なUIが使用可能です。
-                  今回はMaterial UIを使用してカラーセレクトのボタンを作成しました。
-                  <br />
-                  <br />
-                </Typography>
-              </Box>
-            </Card>
+            <a
+              href="https://car-color-change.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Card className="sectionTop">
+                <Box sx={{ textAlign: 'center' }}>
+                  <Typography variant="h1" component="h2" gutterBottom>
+                    <br />
+                    商品紹介Webアプリケーション
+                    <br />
+                    <br />
+                    React × Unity
+                  </Typography>
+                  <img src={`${process.env.PUBLIC_URL}/static/images/other/carColorChange.png`} width="100%" alt="img" />
+                  <Typography style={{ textAlign: 'left' }} variant="body1" gutterBottom>
+                    <br />
+                    3Dデータを利用することで実物に近いビジュアルで商品を紹介出来る
+                    Webアプリケーションです。右下のボタンを押すことで車の色の変更が可能です。
+                    また、画面上をクリックしながらドラッグすることで車を360度見ることができます。
+                    <br />
+                    <br />
+                  </Typography>
+                  <Typography style={{ textAlign: 'left' }} variant="h2" gutterBottom>
+                    Unity
+                  </Typography>
+                  <Typography style={{ textAlign: 'left' }} variant="body1" gutterBottom>
+                    3Dの部分はUnityを使用してリアルタイムレンダリングやモデルを回転させる
+                    動作を行っております。UI部分はReactを使用しており、Reactの豊富なUIが使用可能です。
+                    今回はMaterial UIを使用してカラーセレクトのボタンを作成しました。
+                    <br />
+                    <br />
+                  </Typography>
+                </Box>
+              </Card>
+            </a>
           </Grid>
           <Grid
             item
