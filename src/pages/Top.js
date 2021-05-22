@@ -66,8 +66,8 @@ const Top = () => (
             xs={12}
           >
             <Card className="cardDecoNone">
-              <Box sx={{ textAlign: 'center' }}>
-                <Typography variant="h1" component="h2" gutterBottom>
+              <Box>
+                <Typography sx={{ textAlign: 'center' }} variant="h1" component="h2" gutterBottom>
                   React 天気予報アプリケーション
                 </Typography>
                 <Typography variant="body1" gutterBottom>
@@ -176,7 +176,14 @@ const Top = () => (
                     React × Unity
                   </Typography>
                   <img src={`${process.env.PUBLIC_URL}/static/images/other/carColorChange.png`} width="100%" alt="img" />
-                  <Typography style={{ textAlign: 'left' }} variant="body1" gutterBottom>
+                  <Typography
+                    style={{
+                      textAlign: 'left',
+                      padding: 10
+                    }}
+                    variant="body1"
+                    gutterBottom
+                  >
                     <br />
                     3Dデータを利用することで実物に近いビジュアルで商品を紹介出来る
                     Webアプリケーションです。右下のボタンを押すことで車の色の変更が可能です。
@@ -184,10 +191,24 @@ const Top = () => (
                     <br />
                     <br />
                   </Typography>
-                  <Typography style={{ textAlign: 'left' }} variant="h2" gutterBottom>
+                  <Typography
+                    style={{
+                      textAlign: 'left',
+                      padding: 10
+                    }}
+                    variant="h2"
+                    gutterBottom
+                  >
                     Unity
                   </Typography>
-                  <Typography style={{ textAlign: 'left' }} variant="body1" gutterBottom>
+                  <Typography
+                    style={{
+                      textAlign: 'left',
+                      padding: 10
+                    }}
+                    variant="body1"
+                    gutterBottom
+                  >
                     3Dの部分はUnityを使用してリアルタイムレンダリングやモデルを回転させる
                     動作を行っております。UI部分はReactを使用しており、Reactの豊富なUIが使用可能です。
                     今回はMaterial UIを使用してカラーセレクトのボタンを作成しました。
@@ -216,16 +237,14 @@ const Top = () => (
                     animationData: animation
                   }}
                 />
-                <Typography style={{ textAlign: 'left' }} variant="h2" gutterBottom>
+                <Typography style={{ textAlign: 'left', padding: 10 }} variant="h2" gutterBottom>
                   Lottie
                 </Typography>
-                <Typography style={{ textAlign: 'left' }} variant="body1" gutterBottom>
+                <Typography style={{ textAlign: 'left', padding: 10 }} variant="body1" gutterBottom>
                   lottieというアニメーションのライブラリを使用して実装しました。AfterEffectsで作成した
                   アニメーションをWebやネイティブアプリに適用できるためCSSアニメーション等と比べると自由度が高いです。
                   また、ベクターイメージの描画となるためアニメーションを拡大しても劣化がありません。また、Gifアニメーション
                   と比較してもファイルのサイズは小さくなります。
-                </Typography>
-                <Typography variant="body1" gutterBottom>
                   <br />
                   <br />
                   このアニメーションはAfterEffectsで作成しました。鍵のイラストはIllustratorで作成しました。
