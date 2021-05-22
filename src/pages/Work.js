@@ -67,7 +67,7 @@ const ProductList = () => (
                     <Typography variant="body2" color="textSecondary" component="p">
                       PHP/WordPress/
                       <br />
-                      Wordpress導入。複合検索。
+                      Wordpress導入。複合検索実装。
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -225,7 +225,7 @@ const ProductList = () => (
                 <CardActionArea>
                   <CardMedia
                     style={{ height: 140 }}
-                    image={`${process.env.PUBLIC_URL}/static/images/other/cat.jpg`}
+                    image={`${process.env.PUBLIC_URL}/static/images/other/tokochan.png`}
                     title="Contemplative Reptile"
                   />
                   <CardContent>

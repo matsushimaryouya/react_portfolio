@@ -210,8 +210,32 @@ const Top = () => (
                     gutterBottom
                   >
                     3Dの部分はUnityを使用してリアルタイムレンダリングやモデルを回転させる
-                    動作を行っております。UI部分はReactを使用しており、Reactの豊富なUIが使用可能です。
+                    動作を行っております。
+                    <br />
+                    <br />
+                  </Typography>
+                  <Typography
+                    style={{
+                      textAlign: 'left',
+                      padding: 10
+                    }}
+                    variant="h2"
+                    gutterBottom
+                  >
+                    React
+                  </Typography>
+                  <Typography
+                    style={{
+                      textAlign: 'left',
+                      padding: 10
+                    }}
+                    variant="body1"
+                    gutterBottom
+                  >
+                    UI部分はReactを使用しており、Reactの豊富なUIが使用可能です。
                     今回はMaterial UIを使用してカラーセレクトのボタンを作成しました。
+                    <br />
+                    ReactとUnityの双方向で値の受け渡しが可能です。
                     <br />
                     <br />
                   </Typography>
