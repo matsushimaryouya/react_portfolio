@@ -49,26 +49,6 @@ const Account = () => (
                 xs={12}
               >
                 <Typography variant="h2" gutterBottom>
-                  <br />
-                  自己紹介
-                </Typography>
-                <Typography variant="p" gutterBottom>
-                  はじめまして。現在はフリーでWeb制作をしております。Web制作経験は2年です。
-                  <br />
-                  <br />
-                  前職では、デザインやコーディングの仕事以外にもUnityやBlenderを使った仕事も
-                  行っていました。 学生の頃から趣味でやっていたゲーム制作や3DCGが仕事に繋がることも
-                  多いため、 Web関連以外の新しい技術も取り入れるようにしています。
-                  <br />
-                  <br />
-                  今回、Reactのポートフォリオを作成したのは仕事でReactを
-                  使用する機会があり、その際に扱いやすかったためです。
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                </Typography>
-                <Typography variant="h2" gutterBottom>
                   趣味・特技
                 </Typography>
                 <Typography variant="p" gutterBottom>

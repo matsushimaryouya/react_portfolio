@@ -10,7 +10,7 @@ import {
 import WeatherApp from 'src/components/Weather/Weather';
 // ニューモフィズム----------
 import {
-  Card, CardContent
+  Card, CardContent, Button
 } from 'ui-neumorphism';
 import 'ui-neumorphism/dist/index.css';
 // -----------------------
@@ -28,7 +28,7 @@ const Top = () => (
         backgroundColor: 'background.default',
         minHeight: '100%',
         py: 3,
-        marginTop: -3
+        marginTop: -3,
       }}
     >
       <Container maxWidth={false}>
@@ -52,7 +52,7 @@ const Top = () => (
               >
                 <WeatherApp
                   style={{
-                    borderRadius: 30
+                    borderRadius: 30,
                   }}
                 />
               </CardContent>
@@ -90,7 +90,7 @@ const Top = () => (
             xl={3}
             xs={12}
           >
-            <img src={`${process.env.PUBLIC_URL}/static/images/other/cat.jpg`} width="100%" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/static/images/other/screenPwa.jpg`} width="100%" alt="img" />
           </Grid>
           <Grid
             item
@@ -132,7 +132,7 @@ const Top = () => (
                 3DCG
               </Typography>
               <Typography variant="p" gutterBottom>
-                アプリケーション内の女性キャラクターは3DCGを使用して作成しました。
+                アプリケーション内の女性キャラクターは3DCGソフト（Blender）を使用して作成しました。
                 モデリングからアニメーションまで作成可能です。
                 <br />
                 <br />
@@ -141,7 +141,7 @@ const Top = () => (
                 AfterEffects
               </Typography>
               <Typography variant="p" gutterBottom>
-                「くもり」「晴れ」「雨」はAfterEffectsを使用して作成しました。
+                「くもり」「晴れ」「雨」の素材はAfterEffectsを使用して作成しました。
               </Typography>
             </Card>
           </Grid>
@@ -152,7 +152,70 @@ const Top = () => (
             xl={3}
             xs={12}
           >
-            <img src={`${process.env.PUBLIC_URL}/static/images/other/cat.jpg`} width="100%" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/static/images/other/screenWeatherWoman.jpg`} width="100%" alt="img" />
+          </Grid>
+          <Grid
+            container
+            spacing={3}
+            sx={{
+              marginTop: 3,
+              marginLeft: 1
+            }}
+          >
+            <Grid
+              item
+              lg={4}
+              md={6}
+              xs={12}
+            >
+              <Card
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  width: '100%',
+                  height: '100%'
+                }}
+                style={{ maxWidth: 345 }}
+              >
+                <img src={`${process.env.PUBLIC_URL}/static/images/other/screenSky.png`} width="100%" alt="img" />
+              </Card>
+            </Grid>
+            <Grid
+              item
+              lg={4}
+              md={6}
+              xs={12}
+            >
+              <Card
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  width: '100%',
+                  height: '100%'
+                }}
+                style={{ maxWidth: 345 }}
+              >
+                <img src={`${process.env.PUBLIC_URL}/static/images/other/screenRain.png`} width="100%" alt="img" />
+              </Card>
+            </Grid>
+            <Grid
+              item
+              lg={4}
+              md={6}
+              xs={12}
+            >
+              <Card
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  width: '100%',
+                  height: '100%'
+                }}
+                style={{ maxWidth: 345 }}
+              >
+                <img src={`${process.env.PUBLIC_URL}/static/images/other/screenCloud.png`} width="100%" alt="img" />
+              </Card>
+            </Grid>
           </Grid>
           <Grid
             item
@@ -240,6 +303,36 @@ const Top = () => (
                     <br />
                   </Typography>
                 </Box>
+                <CardContent
+                  style={{
+                    backgroundColor: 'unset',
+                    paddingTop: 10,
+                    paddingBottom: 10,
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      pt: 3
+                    }}
+                  >
+                    <a
+                      style={{ margin: 'auto' }}
+                      href="https://car-color-change.herokuapp.com/"
+                      target="blank"
+                    >
+                      <Button
+                        color="primary"
+                        component="a"
+                        href="https://car-color-change.herokuapp.com/"
+                        variant="contained"
+                      >
+                        LINK
+                      </Button>
+                    </a>
+                  </Box>
+                </CardContent>
               </Card>
             </a>
           </Grid>
@@ -304,7 +397,7 @@ const Top = () => (
             xl={3}
             xs={12}
           >
-            <img src={`${process.env.PUBLIC_URL}/static/images/other/cat.jpg`} width="100%" alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/static/images/other/materialUiList.jpg`} width="100%" alt="img" />
           </Grid>
           <Grid
             item

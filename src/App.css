@@ -173,7 +173,7 @@ body{
     font-size: 5rem;
   }
   .App {
-    height: calc(100vh - 34px);
+    height: calc(100vh - 110px);
     position: relative;
     overflow: hidden;
   }
