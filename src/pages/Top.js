@@ -347,7 +347,7 @@ const Top = () => (
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h1" component="h2" gutterBottom>
                   <br />
-                  Loading Animation
+                  Web Animation
                 </Typography>
                 <Lottie
                   options={{
