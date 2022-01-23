@@ -9,8 +9,9 @@ import CloseIcon from '@material-ui/icons/Close';
 import WomanLongAnim from './long.mp4';
 import WomanHalfAnim from './half.mp4';
 import SunAnim from './sun.mp4';
-import CloudsAnim from './clouds.mp4';
+import CloudsAnim from './clouds2.mp4';
 import RainAnim from './rain.mp4';
+// import { Bold } from 'react-feather';
 
 function WeatherApp() {
   // apiの情報をstate管理
@@ -119,6 +120,7 @@ function WeatherApp() {
         <div className={(statusWeather === 'Clouds') ? 'fadeInEffect' : ' '}>
           <ReactPlayer
             className="EffectAnim Clouds"
+            style={{ zIndex: 1, mixBlendMode: 'screen' }}
             url={CloudsAnim}
             controls={false}
             loop
@@ -134,7 +136,7 @@ function WeatherApp() {
         </div>
 
         {/* rain effects */}
-        <div className={(statusWeather === 'Rain') ? 'fadeInEffect' : ' '}>
+        <div className={(statusWeather === 'Rain' || statusWeather === 'Snow') ? 'fadeInEffect' : ' '}>
           <ReactPlayer
             className="EffectAnim Rain"
             url={RainAnim}
@@ -168,7 +170,13 @@ function WeatherApp() {
             {/* include validation with required or other standard HTML validation rules */}
             <input className="inputTxt" placeholder="例)Tokyo, Osaka etc.." {...register('exampleRequired', { required: true })} />
             {/* errors will return when field validation fails  */}
-            <input className="btn-radius-solid" type="submit" />
+            <input
+              className="btn-radius-solid"
+              type="submit"
+              style={{
+                padding: 5, fontSize: 20, borderRadius: 5, fontWeight: 'bold', cursor: 'pointer'
+              }}
+            />
             {errors.exampleRequired && <p>フォームに入力されていません</p>}
           </form>
 

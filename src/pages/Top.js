@@ -4,7 +4,8 @@ import {
   Container,
   Grid,
   Typography,
-  // Card
+  // Card,
+  Divider,
 } from '@material-ui/core';
 // 追加分
 import WeatherApp from 'src/components/Weather/Weather';
@@ -13,9 +14,14 @@ import {
   Card, CardContent, Button
 } from 'ui-neumorphism';
 import 'ui-neumorphism/dist/index.css';
+import ReactPlayer from 'react-player';
 // -----------------------
 import Lottie from 'lottie-react-web';
+import QPayMovie from './qpay.mp4';
 import animation from './key_animation.json';
+import animation2 from './star_anim.json';
+import animation3 from './motion_graphics.json';
+import animation5 from './complete.json';
 
 const Top = () => (
   <>
@@ -72,11 +78,15 @@ const Top = () => (
                 </Typography>
                 <Typography variant="body1" gutterBottom>
                   <br />
+                  <br />
                   このアプリケーションはアニメーションで「今日の天気」と「長袖か半袖を着るべきか」が、わかるアプリケーションです。
                   <br />
                   <br />
-                  このアプリケーションを作成した目的は季節の変わり目などで今日着ていく服に悩むことが多い経験が私にあった為です。
-                  PWAにも対応しているため、ネイティブアプリのように素早く天気の確認をすることも可能です。
+                  気温によってキャラクターの服装が切り替わります。
+                  <br />
+                  <br />
+                  天気によって空のアニメーションが切り替わります。
+                  <br />
                   <br />
                   <br />
                 </Typography>
@@ -126,6 +136,7 @@ const Top = () => (
             md={12}
             xl={9}
             xs={12}
+            style={{ marginTop: 20 }}
           >
             <Card className="cardDecoNone">
               <Typography variant="h2" gutterBottom>
@@ -151,6 +162,7 @@ const Top = () => (
             md={6}
             xl={3}
             xs={12}
+            style={{ marginTop: 20 }}
           >
             <img src={`${process.env.PUBLIC_URL}/static/images/other/screenWeatherWoman.jpg`} width="100%" alt="img" />
           </Grid>
@@ -177,7 +189,7 @@ const Top = () => (
                 }}
                 style={{ maxWidth: 345 }}
               >
-                <img src={`${process.env.PUBLIC_URL}/static/images/other/screenSky.png`} width="100%" alt="img" />
+                <img src={`${process.env.PUBLIC_URL}/static/images/other/screenSky.png`} width="100%" style={{ padding: 7, borderRadius: 10 }} alt="img" />
               </Card>
             </Grid>
             <Grid
@@ -195,7 +207,7 @@ const Top = () => (
                 }}
                 style={{ maxWidth: 345 }}
               >
-                <img src={`${process.env.PUBLIC_URL}/static/images/other/screenRain.png`} width="100%" alt="img" />
+                <img src={`${process.env.PUBLIC_URL}/static/images/other/screenRain.png`} width="100%" style={{ padding: 7, borderRadius: 10 }} alt="img" />
               </Card>
             </Grid>
             <Grid
@@ -213,7 +225,7 @@ const Top = () => (
                 }}
                 style={{ maxWidth: 345 }}
               >
-                <img src={`${process.env.PUBLIC_URL}/static/images/other/screenCloud.png`} width="100%" alt="img" />
+                <img src={`${process.env.PUBLIC_URL}/static/images/other/screenCloud2.png`} width="100%" style={{ padding: 7, borderRadius: 10 }} alt="img" />
               </Card>
             </Grid>
           </Grid>
@@ -223,11 +235,170 @@ const Top = () => (
             md={12}
             xl={12}
             xs={12}
+            style={{ marginTop: 70 }}
+          >
+            <a
+              href="https://apps.apple.com/jp/app/qpay/id1590256862"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              <Card
+                className="sectionTop"
+              >
+                <Box sx={{ textAlign: 'center' }}>
+                  <Typography variant="h1" component="h2" gutterBottom>
+                    <br />
+                    ポイント決済アプリ
+                    /
+                    QPay
+                    <br />
+                    <br />
+                  </Typography>
+                  <CardContent>
+                    <Box style={{ display: 'flex', justifyContent: 'space-around' }}>
+                      <Grid
+                        item
+                        lg={5}
+                        md={5}
+                        xl={12}
+                        xs={12}
+                      >
+                        <Card
+                          inset
+                          style={{ padding: 13, marginBottom: 30 }}
+                        >
+                          <ReactPlayer
+                            // className={}
+                            url={QPayMovie}
+                            width="100%"
+                            height="auto"
+                            controls={false}
+                            loop
+                            config={{
+                              file: {
+                                attributes: {
+                                  autoPlay: true,
+                                  muted: true
+                                }
+                              }
+                            }}
+                          />
+                        </Card>
+                      </Grid>
+                      <Grid
+                        item
+                        lg={6}
+                        md={12}
+                        xl={12}
+                        xs={12}
+                      >
+                        <CardContent>
+                          <Typography
+                            style={{
+                              textAlign: 'left',
+                            }}
+                            variant="body1"
+                            gutterBottom
+                          >
+                            QRコードを読み取りポイント決済出来るアプリです。
+                            <br />
+                            <br />
+                            デザインから設計・実装まで担当しReactNativeで作成しました。
+                            <br />
+                            <br />
+                            iOSとAndroidでQRコード読み取りの際、Androidのみノイズによる読み取りエラー
+                            が出るためReact Nativeでノイズ除去を実装しております。
+                            <br />
+                            <br />
+                          </Typography>
+                          <Typography
+                            style={{
+                              textAlign: 'left',
+                              padding: 10
+                            }}
+                            variant="h2"
+                            gutterBottom
+                          >
+                            Lottie
+                          </Typography>
+                          <Typography
+                            style={{
+                              textAlign: 'left',
+                              padding: 10
+                            }}
+                            variant="body1"
+                            gutterBottom
+                          >
+                            トップページと完了画面のアニメーションはLottieを使用しております。
+                            <br />
+                            <br />
+                          </Typography>
+                          <CardContent
+                            style={{
+                              backgroundColor: 'unset',
+                              paddingTop: 10,
+                              paddingBottom: 10,
+                            }}
+                          >
+                            <Box
+                              sx={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                pt: 3
+                              }}
+                            >
+                              <a
+                                style={{ margin: 'auto' }}
+                                href="https://apps.apple.com/jp/app/qpay/id1590256862"
+                                target="blank"
+                              >
+                                <Button
+                                  color="primary"
+                                  component="a"
+                                  href="https://apps.apple.com/jp/app/qpay/id1590256862"
+                                  variant="contained"
+                                >
+                                  IOS
+                                </Button>
+                              </a>
+                              <a
+                                style={{ margin: 'auto' }}
+                                href="https://play.google.com/store/apps/details?id=jp.qualiapk"
+                                target="blank"
+                              >
+                                <Button
+                                  color="primary"
+                                  component="a"
+                                  href="https://play.google.com/store/apps/details?id=jp.qualiapk"
+                                  variant="contained"
+                                >
+                                  Android
+                                </Button>
+                              </a>
+                            </Box>
+                          </CardContent>
+                        </CardContent>
+                      </Grid>
+                    </Box>
+                  </CardContent>
+                </Box>
+              </Card>
+            </a>
+          </Grid>
+          <Grid
+            item
+            lg={12}
+            md={12}
+            xl={12}
+            xs={12}
+            style={{ marginTop: 70 }}
           >
             <a
               href="https://car-color-change.herokuapp.com/"
               target="_blank"
               rel="noreferrer"
+              style={{ textDecoration: 'none' }}
             >
               <Card className="sectionTop">
                 <Box sx={{ textAlign: 'center' }}>
@@ -342,19 +513,83 @@ const Top = () => (
             md={12}
             xl={12}
             xs={12}
+            style={{ marginTop: 70 }}
           >
             <Card className="sectionTop">
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h1" component="h2" gutterBottom>
                   <br />
                   Web Animation
+                  <br />
+                  <br />
                 </Typography>
-                <Lottie
-                  options={{
-                    animationData: animation
-                  }}
-                />
+                <div style={{ display: 'flex' }}>
+                  <Grid
+                    item
+                    lg={6}
+                    md={12}
+                    xl={12}
+                    xs={12}
+                  >
+                    <Lottie
+                      options={{
+                        animationData: animation
+                      }}
+                    />
+                  </Grid>
+                  <Divider orientation="vertical" flexItem style={{ background: 'rgb(16 2 117 / 30%)' }} />
+                  <Grid
+                    item
+                    lg={6}
+                    md={12}
+                    xl={12}
+                    xs={12}
+                  >
+                    <div style={{ margin: 30 }}>
+                      <Lottie
+                        style={{ background: '#002329' }}
+                        options={{
+                          animationData: animation2
+                        }}
+                      />
+                    </div>
+                  </Grid>
+                </div>
+                <Divider style={{ width: '85%', margin: 'auto', background: 'rgb(16 2 117 / 30%)' }} />
+                <div style={{ display: 'flex' }}>
+                  <Grid
+                    item
+                    lg={6}
+                    md={12}
+                    xl={12}
+                    xs={12}
+                  >
+                    <Lottie
+                      style={{ padding: 15, width: '80%' }}
+                      options={{
+                        animationData: animation3
+                      }}
+                    />
+                  </Grid>
+                  <Divider orientation="vertical" flexItem style={{ background: 'rgb(16 2 117 / 30%)' }} />
+                  <Grid
+                    item
+                    lg={6}
+                    md={12}
+                    xl={12}
+                    xs={12}
+                  >
+                    <Lottie
+                      style={{ padding: 15, width: '50%' }}
+                      options={{
+                        animationData: animation5
+                      }}
+                    />
+                  </Grid>
+                </div>
                 <Typography style={{ textAlign: 'left', padding: 10 }} variant="h2" gutterBottom>
+                  <br />
+                  <br />
                   Lottie
                 </Typography>
                 <Typography style={{ textAlign: 'left', padding: 10 }} variant="body1" gutterBottom>
@@ -367,6 +602,8 @@ const Top = () => (
                   このアニメーションはAfterEffectsで作成しました。鍵のイラストはIllustratorで作成しました。
                   <br />
                   <br />
+                  <br />
+                  <br />
                 </Typography>
               </Box>
             </Card>
@@ -377,13 +614,15 @@ const Top = () => (
             md={12}
             xl={12}
             xs={12}
+            style={{ marginTop: 70 }}
           >
             <Card className="sectionTop cardDecoNone">
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h1" component="h2" gutterBottom>
                   このポートフォリオについて
                 </Typography>
-                <Typography variant="body1" gutterBottom>
+                <Typography variant="body1" gutterBottom style={{ textAlign: 'left' }}>
+                  <br />
                   Reactを使用して作成しました。ReactはUIが豊富に用意されているため、それらを活用して素早く作成することを意識して
                   作成しました。
                 </Typography>
@@ -406,7 +645,7 @@ const Top = () => (
             xl={9}
             xs={12}
           >
-            <Card className="cardDecoNone">
+            <Card className="cardDecoNone" style={{ marginBottom: 100 }}>
               <Typography variant="h2" gutterBottom>
                 SPA
               </Typography>

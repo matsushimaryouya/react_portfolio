@@ -96,10 +96,17 @@ body{
     object-fit: cover;
   }
   .Clouds{
-    top: -470px;
+    top: -460px;
+  }
+  .Clouds video{
+    mix-blend-mode: unset;
   }
   .Rain.EffectAnim{
     height: calc(100vh - 24px)!important;
+  }
+  .Rain video{
+    margin-top: -30px;
+    margin-left: -40px;
   }
   .fadeInEffect .EffectAnim{
     display: block;

@@ -3,7 +3,7 @@ import {
   Box,
   // Card,
   // CardContent,
-  Divider,
+  // Divider,
   Typography
 } from '@material-ui/core';
 // ニューモフィズム----------
@@ -55,7 +55,6 @@ const AccountProfile = (props) => (
         </Typography>
       </Box>
     </CardContent>
-    <Divider />
   </Card>
 );
 
