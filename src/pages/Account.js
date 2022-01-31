@@ -20,6 +20,8 @@ import ReactPlayer from 'react-player';
 import AccountProfile from 'src/components/account/AccountProfile';
 import Movie1 from './weatherApp.mp4';
 import Movie2 from './vfx.mp4';
+import Movie3 from './openCV2.mp4';
+import Movie4 from './summon.mp4';
 
 const Account = () => (
   <>
@@ -306,6 +308,271 @@ const Account = () => (
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
                           Blender/3DCG/モデリング
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Grid>
+                {/* Work5-1 */}
+                <Grid
+                  item
+                  lg={4}
+                  md={6}
+                  xs={12}
+                >
+                  <Card
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      width: '100%',
+                      height: '100%',
+                    }}
+                    style={{ maxWidth: 345, padding: 10 }}
+                  >
+                    <CardActionArea>
+                      <CardMedia
+                        style={{ height: 200, borderRadius: 5 }}
+                        image={`${process.env.PUBLIC_URL}/static/images/other/model3.jpg`}
+                        title="Contemplative Reptile"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          アバター制作
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                          Blender/3DCG/モデリング
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Grid>
+                {/* Work5-2 */}
+                <Grid
+                  item
+                  lg={4}
+                  md={6}
+                  xs={12}
+                >
+                  <Card
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      width: '100%',
+                      height: '100%',
+                    }}
+                    style={{ maxWidth: 345, padding: 10 }}
+                  >
+                    <CardActionArea>
+                      <CardMedia
+                        style={{ height: 200, borderRadius: 5 }}
+                        image={`${process.env.PUBLIC_URL}/static/images/other/model2.jpg`}
+                        title="Contemplative Reptile"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          アバター制作
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                          Blender/3DCG/モデリング
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Grid>
+                {/* Work5-3 */}
+                <Grid
+                  item
+                  lg={4}
+                  md={6}
+                  xs={12}
+                >
+                  <Card
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      width: '100%',
+                      height: '100%',
+                    }}
+                    style={{ maxWidth: 345, padding: 10 }}
+                  >
+                    <CardActionArea>
+                      <CardMedia
+                        style={{ height: 200, borderRadius: 5 }}
+                        image={`${process.env.PUBLIC_URL}/static/images/other/model.jpg`}
+                        title="Contemplative Reptile"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          アバター制作
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                          Blender/3DCG/モデリング
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Grid>
+                {/* Work2 */}
+                <Grid
+                  item
+                  lg={12}
+                  md={12}
+                  xs={12}
+                >
+                  <Card
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      width: '100%',
+                      height: '100%',
+                    }}
+                  >
+                    <CardActionArea>
+                      <ReactPlayer
+                        className="womanAnim"
+                        url={Movie3}
+                        controls={false}
+                        loop
+                        config={{
+                          file: {
+                            attributes: {
+                              autoPlay: true,
+                              muted: true
+                            }
+                          }
+                        }}
+                        style={{ padding: 10 }}
+                        height="50%"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          openCV
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                          Unity/iOS/Android
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Grid>
+                {/* Work5-3 */}
+                <Grid
+                  item
+                  lg={6}
+                  md={12}
+                  xs={12}
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=CM1Qv0Crp8c"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card
+                      sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        width: '100%',
+                        height: '100%',
+                      }}
+                      style={{ padding: 10 }}
+                    >
+                      <CardActionArea>
+                        <CardMedia
+                          style={{ height: 300, borderRadius: 5 }}
+                          image={`${process.env.PUBLIC_URL}/static/images/other/mujin.png`}
+                          title="Contemplative Reptile"
+                        />
+                        <CardContent>
+                          <Typography gutterBottom variant="h5" component="h2">
+                            無人配信【リンクあります！】
+                          </Typography>
+                          <Typography variant="body2" color="textSecondary" component="p">
+                            Unity
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                    </Card>
+                  </a>
+                </Grid>
+                {/* Work5-3 */}
+                <Grid
+                  item
+                  lg={6}
+                  md={12}
+                  xs={12}
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=CM1Qv0Crp8c"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card
+                      sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        width: '100%',
+                        height: '100%',
+                      }}
+                      style={{ padding: 10 }}
+                    >
+                      <CardActionArea>
+                        <CardMedia
+                          style={{ height: 300, borderRadius: 5 }}
+                          image={`${process.env.PUBLIC_URL}/static/images/other/mujinStream.png`}
+                          title="Contemplative Reptile"
+                        />
+                        <CardContent>
+                          <Typography gutterBottom variant="h5" component="h2">
+                            無人配信【リンクあります】
+                          </Typography>
+                          <Typography variant="body2" color="textSecondary" component="p">
+                            Unity
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                    </Card>
+                  </a>
+                </Grid>
+                {/* Work2 */}
+                <Grid
+                  item
+                  lg={12}
+                  md={12}
+                  xs={12}
+                >
+                  <Card
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      width: '100%',
+                      height: '100%',
+                    }}
+                  >
+                    <CardActionArea>
+                      <ReactPlayer
+                        className="womanAnim"
+                        url={Movie4}
+                        controls={false}
+                        loop
+                        config={{
+                          file: {
+                            attributes: {
+                              autoPlay: true,
+                              muted: true
+                            }
+                          }
+                        }}
+                        style={{ padding: 10 }}
+                        height="50%"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          VUIによるオブジェクトの召喚
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                          Unity/Oculus
                         </Typography>
                       </CardContent>
                     </CardActionArea>
